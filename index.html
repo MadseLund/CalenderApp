@@ -25,12 +25,37 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Document</title>
 
+ <!-- Tracking Callback -->
+    <script>
+        window.growthbook_config = window.growthbook_config || {};
+        window.growthbook_config.trackingCallback = (experiment, result) => {
+        if (window.gtag) {
+            window.gtag("event", "experiment_viewed", {
+            experiment_id: experiment.key,
+            variation_id: result.key,
+            });
+        } else {
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+            event: "experiment_viewed",
+            experiment_id: experiment.key,
+            variation_id: result.key,
+            });
+        }
+        if (window?.clarity) {
+            window.clarity('set', 'experiment', experiment.key);
+            window.clarity('set', 'variation', result.key);
+        }
+        };
+    </script>
+
+
 <!-- Growthbook SDK -->
-<script async
-  data-api-host="https://cdn.growthbook.io"
-  data-client-key="sdk-N20ExNhBPHFEk3U8"
-  src="https://cdn.jsdelivr.net/npm/@growthbook/growthbook/dist/bundles/auto.min.js"
-></script>
+    <script async
+        data-api-host="https://cdn.growthbook.io"
+        data-client-key="sdk-N20ExNhBPHFEk3U8"
+        src="https://cdn.jsdelivr.net/npm/@growthbook/growthbook/dist/bundles/auto.min.js"
+    ></script>
 
 </head>
 <body>
