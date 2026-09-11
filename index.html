@@ -59,21 +59,260 @@
 
 </head>
 <body>
+  <header class="header">
+    <a href="#" class="logo" aria-label="Calendo home">
+      <span class="logo-mark">C</span>
+      Calendo
+    </a>
 
-    <div class="hero">
+    <nav class="nav-left" aria-label="Main navigation">
+      <a href="#features">Product</a>
+      <a href="#solutions">Solutions</a>
+      <a href="#pricing">Pricing</a>
+    </nav>
 
-        <div class="hero-content">
-            <h1>B2B Calender Made Simple here</h1>
-            <p>Choose a time that works for you and get a personalised walkthrough with our team.</p>
-            <button>Sign in</button>
-            <button class="book-btn">Book meeting</button>
+    <nav class="nav-right" aria-label="Account navigation">
+      <a href="#login" class="login">Log in</a>
+      <a href="#demo" class="btn btn-small">Get started for free</a>
+    </nav>
+
+    <button class="mobile-menu" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero section">
+      <div class="hero-content">
+        <div class="eyebrow"><span></span> The smarter way to schedule</div>
+        <h1>Meetings, made <span>simple.</span></h1>
+        <p class="hero-text">
+          Calendo helps teams schedule meetings without the back-and-forth.
+          Share your availability, let people choose a time, and get on with your day.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#demo" class="btn">Get started for free <span>→</span></a>
+          <a href="#features" class="text-link">See how it works <span>↓</span></a>
         </div>
 
-        <div class="hero-image">
-              <img src="Assets/Stock_calender.jpg" alt="old man with calender">
+        <div class="trust-row">
+          <div class="avatars">
+            <span>JD</span><span>MK</span><span>AS</span><span>+</span>
+          </div>
+          <div>
+            <strong>10,000+ teams</strong>
+            <small>schedule with Calendo</small>
+          </div>
         </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="calendar-card">
+          <div class="calendar-top">
+            <div>
+              <small>Tuesday, September 15</small>
+              <h3>Choose a time</h3>
+            </div>
+            <button class="icon-btn" aria-label="More options">•••</button>
+          </div>
+
+          <div class="calendar-person">
+            <div class="person-avatar">ME</div>
+            <div>
+              <strong>Meeting with Michael</strong>
+              <small>30 min · Google Meet</small>
+            </div>
+          </div>
+
+          <div class="time-grid">
+            <button>09:00</button>
+            <button>09:30</button>
+            <button class="selected">10:00</button>
+            <button>10:30</button>
+            <button>11:00</button>
+            <button>11:30</button>
+            <button>13:00</button>
+            <button>13:30</button>
+          </div>
+
+          <div class="calendar-footer">
+            <span>Europe/Copenhagen</span>
+            <span>✓ Calendar synced</span>
+          </div>
+        </div>
+        <div class="floating-card floating-one">✓ Meeting booked</div>
+        <div class="floating-card floating-two">● Your calendar is up to date</div>
+      </div>
+    </section>
+
+    <section class="logo-strip">
+      <p>Trusted by teams who value their time</p>
+      <div class="company-logos">
+        <span>northstar</span><span>vertex</span><span>orbit</span><span>horizon</span><span>lumen</span>
+      </div>
+    </section>
+
+    <section class="section features" id="features">
+      <div class="section-heading">
+        <div class="eyebrow">Everything in one place</div>
+        <h2>Stop scheduling.<br><span>Start meeting.</span></h2>
+        <p>Everything you need to turn availability into booked meetings.</p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card large">
+          <div class="feature-icon">↗</div>
+          <h3>Share one simple link</h3>
+          <p>Give prospects and customers one place to find a time that works. No email ping-pong required.</p>
+          <div class="mock-link">calendo.com/michael <span>↗</span></div>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon">◷</div>
+          <h3>Smart availability</h3>
+          <p>Connect your calendars and automatically protect your busy times.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon">⌁</div>
+          <h3>Works everywhere</h3>
+          <p>Google Calendar, Outlook, Zoom, Google Meet and more.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon">↺</div>
+          <h3>Automatic reminders</h3>
+          <p>Reduce no-shows with reminders that keep everyone on track.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section split-section" id="solutions">
+      <div class="split-copy">
+        <div class="eyebrow">Built for modern teams</div>
+        <h2>More meetings.<br><span>Less admin.</span></h2>
+        <p>Whether you're booking sales calls, customer onboarding or internal meetings, Calendo keeps the process effortless.</p>
+        <ul class="check-list">
+          <li><span>✓</span> Personal and team booking pages</li>
+          <li><span>✓</span> Automatic timezone detection</li>
+          <li><span>✓</span> Custom questions and workflows</li>
+          <li><span>✓</span> Analytics that show what's working</li>
+        </ul>
+        <a href="#demo" class="btn">Explore Calendo <span>→</span></a>
+      </div>
+
+      <div class="stats-card">
+        <div class="stats-header">
+          <span>Meeting performance</span>
+          <span class="green-pill">+24.8%</span>
+        </div>
+        <div class="big-stat">2,847 <small>bookings</small></div>
+        <div class="chart">
+          <div class="bar" style="height:35%"></div>
+          <div class="bar" style="height:48%"></div>
+          <div class="bar" style="height:43%"></div>
+          <div class="bar" style="height:61%"></div>
+          <div class="bar" style="height:56%"></div>
+          <div class="bar active" style="height:82%"></div>
+          <div class="bar" style="height:72%"></div>
+          <div class="bar" style="height:91%"></div>
+        </div>
+        <div class="chart-labels"><span>Aug 1</span><span>Aug 8</span><span>Aug 15</span><span>Aug 22</span></div>
+      </div>
+    </section>
+
+    <section class="section testimonial">
+      <div class="quote-mark">“</div>
+      <blockquote>
+        Calendo took something that used to take 10 minutes of email back-and-forth and turned it into a 30-second process.
+      </blockquote>
+      <div class="testimonial-person">
+        <div class="person-avatar">SK</div>
+        <div><strong>Sarah Klein</strong><small>Head of Growth, Vertex</small></div>
+      </div>
+    </section>
+
+    <section class="section pricing" id="pricing">
+      <div class="section-heading center">
+        <div class="eyebrow">Simple pricing</div>
+        <h2>Start free.<br><span>Upgrade when you grow.</span></h2>
+        <p>No credit card required. Cancel anytime.</p>
+      </div>
+
+      <div class="pricing-grid">
+        <article class="price-card">
+          <h3>Free</h3>
+          <p>For individuals getting started.</p>
+          <div class="price">$0 <small>/month</small></div>
+          <a href="#demo" class="outline-btn">Get started</a>
+          <ul class="check-list">
+            <li><span>✓</span> 1 calendar</li>
+            <li><span>✓</span> Unlimited meetings</li>
+            <li><span>✓</span> Booking page</li>
+          </ul>
+        </article>
+
+        <article class="price-card featured">
+          <div class="popular">Most popular</div>
+          <h3>Pro</h3>
+          <p>For professionals and growing teams.</p>
+          <div class="price">$12 <small>/user/month</small></div>
+          <a href="#demo" class="btn">Start free trial <span>→</span></a>
+          <ul class="check-list">
+            <li><span>✓</span> Unlimited calendars</li>
+            <li><span>✓</span> Team scheduling</li>
+            <li><span>✓</span> Advanced analytics</li>
+            <li><span>✓</span> Custom branding</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section faq-section">
+      <div class="section-heading center">
+        <div class="eyebrow">Questions</div>
+        <h2>Frequently asked <span>questions.</span></h2>
+      </div>
+
+      <div class="faq">
+        <button class="faq-question">Can I connect my existing calendar?<span>+</span></button>
+        <div class="faq-answer"><p>Yes. Calendo can connect with your existing calendar so busy times are automatically protected.</p></div>
+
+        <button class="faq-question">Do I need a credit card to start?<span>+</span></button>
+        <div class="faq-answer"><p>No. You can start on the free plan without entering payment details.</p></div>
+
+        <button class="faq-question">Can my team use Calendo?<span>+</span></button>
+        <div class="faq-answer"><p>Absolutely. The Pro plan supports team scheduling, shared availability and team booking pages.</p></div>
+
+        <button class="faq-question">Can I cancel anytime?<span>+</span></button>
+        <div class="faq-answer"><p>Yes. There are no long-term contracts. You can change or cancel your plan whenever you want.</p></div>
+      </div>
+    </section>
+
+    <section class="section final-cta" id="demo">
+      <div>
+        <div class="eyebrow">Ready when you are</div>
+        <h2>Give your calendar<br>a little <span>less chaos.</span></h2>
+        <p>Start scheduling smarter today.</p>
+        <a href="#" class="btn btn-light" id="ctaButton">Get started for free <span>→</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-main">
+      <a href="#" class="logo"><span class="logo-mark">C</span> Calendo</a>
+      <div class="footer-links">
+        <a href="#features">Product</a>
+        <a href="#solutions">Solutions</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#">Privacy</a>
+      </div>
+      <span class="copyright">© 2026 Calendo</span>
     </div>
-    <script src="script.js"></script>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
-
